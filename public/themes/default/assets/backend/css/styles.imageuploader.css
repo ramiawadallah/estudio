@@ -1,0 +1,98 @@
+.button, .uploader__file-label, .uploader__submit-button {
+  background-color: white;
+  background-color: transparent;
+  border: 2px solid #ff8598;
+  border-radius: 5px;
+  color: #ff8598;
+  display: block;
+  font-size: 0.8em;
+  padding: 1em 2em;
+  max-width: 15em;
+  text-transform: uppercase;
+  transition: background-color 0.2s; }
+
+.button:hover, .uploader__file-label:hover, .uploader__submit-button:hover,
+.button:active,
+.uploader__file-label:active,
+.uploader__submit-button:active,
+.button:focus,
+.uploader__file-label:focus,
+.uploader__file-input:focus + .uploader__file-label,
+.uploader__submit-button:focus {
+  background-color: #ff8598;
+  color: white; }
+
+.button--secondary {
+  color: #ff8598;
+  border-color: #ff8598;
+  max-width: 15em; }
+
+.button--secondary:hover,
+.button--secondary:active,
+.button--secondary:focus,
+.uploader__file-input:focus + .uploader__file-label {
+  background-color: #ff8598;
+  color: white; }
+
+.button--inline {
+  display: inline-block; }
+
+.button--big-bottom, .uploader__submit-button {
+  max-width: none;
+  width: 100%;
+  text-align: center;
+  border-radius: 0;
+  background-color: #ff8598;
+  color: white; }
+
+.button--big-bottom:hover, .uploader__submit-button:hover,
+.button--big-bottom:active,
+.uploader__submit-button:active,
+.button--big-bottom:focus,
+.uploader__submit-button:focus {
+  background-color: #ffb8c3; }
+
+.icon-button, .uploader__icon-button {
+  background: transparent;
+  border: 0;
+  color: #d2d2d2; }
+
+.icon-button:hover, .uploader__icon-button:hover {
+  color: #424242; }
+
+
+.site-header::after {
+  content: '';
+  clear: both;
+  display: table; }
+
+.uploader__file-input {
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 0.1px;
+  z-index: -1; }
+
+.hide, .uploader__hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+.error, .uploader__error {
+  color: #ff3264; }
+
+.file-list, .uploader__file-list {
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+
+.file-list__item, .uploader__file-list__item {
+  display: table;
+  padding: 0.5em;
+  width: 100%; }
+
+.file-list__item:nth-child(2n), .uploader__file-list__item:nth-child(2n) {
+  background-color: #fff5f7; }
